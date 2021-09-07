@@ -1,0 +1,15 @@
+---
+# vi: ts=2 sw=2 et:
+
+name: Auto close translation PRs
+on:
+  pull_request:
+    paths:
+      - 'forbidden/**'
+
+jobs:
+  steps:
+    - name: Close the PR
+      uses: peter-evans/close-pull@v1
+      with:
+        comment: "Translations are handled by <edit me>"
