@@ -9,6 +9,7 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: Close the PR
         uses: peter-evans/close-pull@v1
