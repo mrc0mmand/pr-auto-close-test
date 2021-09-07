@@ -8,8 +8,9 @@ on:
       - 'forbidden/**'
 
 jobs:
-  steps:
-    - name: Close the PR
-      uses: peter-evans/close-pull@v1
-      with:
-        comment: "Translations are handled by <edit me>"
+  build:
+    steps:
+      - name: Close the PR
+        uses: peter-evans/close-pull@v1
+        with:
+          comment: "Translations are handled by <edit me>"
